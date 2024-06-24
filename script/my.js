@@ -232,6 +232,7 @@
 //     let isExist = users.find(function(v, i) {
 //       return value.name == v.name && index != i
 //     })
+//     // console.log(isExist);
 
 //     if (!isExist) {
 //       result.push(value)
@@ -334,3 +335,144 @@
 // }
 // console.log(studentAge(students));
 
+
+// 18-masala
+// const students = [
+//   { name: 'Alice', age: 20, score: 85, status: 'active' },
+//   { name: 'Bob', age: 22, score: 92, status: 'inactive' },
+//   { name: 'Charlie', age: 23, score: 88, status: 'active' }
+// ];
+// function status(arr=[]){
+//   let newArr=arr.map(item=>{
+//     return item.status;
+//   })
+//   return newArr;
+// }
+// console.log(status(students));
+
+// 19-masala
+// const students = [
+//   { name: 'Alice', age: 20, score: 85, status: 'active' },
+//   { name: 'Bob', age: 22, score: 92, status: 'inactive' }
+// ];
+
+// function editStudent(arr, name, age, score, status){
+//   let newArr=arr.map(item=>{
+//     if(item.name==name){
+//       item.age=age;
+//       item.score=score;
+//       item.status=status
+//     }
+//     return item;
+//   })
+//   return newArr;
+// }
+// console.log(editStudent(students, 'Bob', 15, 95, 'acctive'));
+
+// 20-masala
+// const students = [
+//   { name: 'Alice', age: 18, score: 85, status: 'active' },
+//   { name: 'Bob', age: 22, score: 92, status: 'inactive' },
+//   { name: 'Charlie', age: 19, score: 88, status: 'active' }
+// ];
+
+// function findStudent(arr=[]){
+//   let result=arr[0];
+//   arr.forEach(element => {
+//     if(element.age<result.age){
+//       result=element;
+//     }
+//   });
+//   return result;
+// }
+// console.log(findStudent(students));
+
+
+
+// String metodlariga oid masalalar.
+
+// 1-masala
+// let txt='HelloWorld';
+// function str(a, startInd, endInd){
+//   let newTxt=a.substring(startInd, endInd);
+//   return newTxt;
+// }
+// console.log(str(txt, 2, 5));
+
+// 2-masala
+// let txt="Hello, WORLD!";
+// function editText(str){
+//   let result='';
+//   let arr=txt.split("");
+//   arr.forEach(item=>{
+//     if(item==item.toUpperCase()){
+//       result+=item.toLowerCase();
+//     }else{
+//       result+=item.toUpperCase()
+//     }
+//   })
+//   return result;
+// }
+// console.log(editText(txt));
+
+// 3-masala
+  // let txt="Hello world from JavaScript";
+  // function createArrayFromString(str){
+  //   let arr=str.split(" ");
+  //   return arr;
+  // }
+  // console.log(createArrayFromString(txt));
+
+// 4-masala
+// let arr=["Hello", "world", "from", "JavaScript"];
+// function createStringFromArray(arr){
+//   let str=arr.join(", ");
+//   return str;
+// }
+// console.log(createStringFromArray(arr));
+
+// 5-masala
+// let txt="JavaScript";
+// function changeStr(str){
+//   let result=str.replaceAll('a', "@");
+//   return result;
+// }
+// console.log(changeStr(txt));
+
+// 6-masala
+// let a="   Hello, world!   ";
+// function deleteTrim(str){
+//   let result=str.trim();
+//   return result;
+// }
+// console.log(deleteTrim(a));
+
+// 7-masala
+// let str="Hello World";
+// function getItem(str, ind){
+//   let result=str.charAt(ind);
+//   return result;
+// }
+// console.log(getItem(str, 3));
+
+// 8-masala
+// let str="Hello, world!";
+// function findTxt(str, txt){
+//   let res=str.includes(txt);
+//   return res;
+// }
+// console.log(findTxt(str, 'world'));
+
+// 9-masala
+// let str='Hello world';
+// function startWithStr(str, txt){
+//   return str.startsWith(txt);
+// }
+// console.log(startWithStr(str, 'Hello'));
+
+// 10-masala
+// let str='Hello world';
+// function endWithStr(str, txt){
+//   return str.endsWith(txt);
+// }
+// console.log(endWithStr(str, 'world'));
