@@ -224,7 +224,25 @@
 //     { name: 'Bob', age: 22, score: 92, status: 'inactive' },
 //     { name: 'Alice', age: 23, score: 88, status: 'active' }
 //   ];
-// ISHLAY OLMADIM!
+// // ISHLAB berishdi
+
+// function uniqueUser(users) {
+//   let result = [];
+//   users.forEach((value, index) => {
+//     let isExist = users.find(function(v, i) {
+//       return value.name == v.name && index != i
+//     })
+
+//     if (!isExist) {
+//       result.push(value)
+//     }
+//   })
+//   return result;
+// }
+
+// console.log(uniqueUser(students));
+
+
 
 // 12-masala
 // const students = [
@@ -266,11 +284,53 @@
 //   console.log(objKeys(students));
 
 // 15-masala
-const students = [
-    { name: 'Alice', age: 20, score: 85, status: 'active' },
-    { name: 'Bob', age: 22, score: 92, status: 'inactive' }
-  ];
+// const students = [
+//     { name: 'Alice', age: 20, score: 85, status: 'active' },
+//     { name: 'Bob', age: 22, score: 92, status: 'inactive' }
+//   ];
 
-  function addStudent(arr, name, age, score, status){
-   
-  }
+//   function addStudent(arr, name, age, score, status){
+//    let talaba={
+//     name,
+//     age,
+//     score,
+//     status
+//    }
+//    arr.push(talaba);
+//    return arr;
+//   }
+//   console.log(addStudent(students, 'Alisher', 25, 88, 'active'));
+
+// 16-masala
+// const students = [
+//   { name: 'Alice', age: 20, score: 85, status: 'active' },
+//   { name: 'Bob', age: 22, score: 92, status: 'inactive' },
+//   { name: 'Charlie', age: 23, score: 88, status: 'active' }
+// ];
+
+// function deleteStudent(arr, ism){
+//   let newArr=[];
+//   arr.forEach(element => {
+//     if(element.name == ism){
+//       delete element;
+//     }
+//     else{
+//       newArr.push(element)
+//     }
+//   });
+//   return newArr;
+// }
+// console.log(deleteStudent(students, 'Bob'));
+
+// 17-masala
+// const students = [
+//   { name: 'Alice', age: 20, score: 85, status: 'active' },
+//   { name: 'Bob', age: 22, score: 92, status: 'inactive' },
+//   { name: 'Charlie', age: 19, score: 88, status: 'active' }
+// ];
+// function studentAge(arr=[]){
+//   let result=arr.every(item => item.age>20)
+//   return result;
+// }
+// console.log(studentAge(students));
+
